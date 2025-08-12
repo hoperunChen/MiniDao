@@ -6,8 +6,8 @@ MiniDao
 [![](https://img.shields.io/badge/Author-北京国炬软件-orange.svg)](http://jeecg.com/aboutusIndex)
 [![](https://img.shields.io/badge/Blog-官方博客-blue.svg)](https://jeecg.blog.csdn.net)
 [![](https://img.shields.io/badge/version-1.10.11-brightgreen.svg)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/jeecg-boot.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/jeecg-boot.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/jeecg-boot)
+[![GitHub stars](https://img.shields.io/github/stars/jeecgboot/MiniDao.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/jeecg-boot)
+[![GitHub forks](https://img.shields.io/github/forks/jeecgboot/MiniDao.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/jeecg-boot)
 
 
 
@@ -42,9 +42,9 @@ MiniDao 是一款轻量级JAVA持久层框架，基于 SpringJdbc + freemarker �
 
 ```
 <dependency>
-  <groupId>org.jeecgframework</groupId>
-  <artifactId>minidao-spring-boot-starter</artifactId>
-  <version>1.10.11</version>
+    <groupId>org.jeecgframework</groupId>
+    <artifactId>minidao-spring-boot-starter-jsqlparser-4.9</artifactId>
+    <version>1.10.11</version>
 </dependency>
 ```
 
@@ -52,7 +52,6 @@ MiniDao 是一款轻量级JAVA持久层框架，基于 SpringJdbc + freemarker �
 - [springmvc与Minidao集成](http://minidao.jeecg.com/2392293)
 
 
-		
 
 技术交流
 -----------------------------------

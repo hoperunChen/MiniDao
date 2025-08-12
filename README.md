@@ -72,6 +72,19 @@ MiniDao 是一款轻量级JAVA持久层框架，基于 SpringJdbc + freemarker �
 
 
 
+分支说明
+-----------------------------------
+> 注意：目前默认分支已切换成 master-jsqlparser4.9，后期jsqlparser4.6分支均停止维护
+
+| 分支                        |            架构说明             |   状态 |
+|---------------------------|:---------------------------:|-----:|
+| master-jsqlparser4.9      | SpringBoot2 + jsqlparser4.9 | 默认分支 |
+| springboot3-jsqlparser4.9 | SpringBoot3 + jsqlparser4.9 | 持续维护 |
+| master                    | SpringBoot2 + jsqlparser4.6 | 停止维护 |
+| springboot3               | SpringBoot3 + jsqlparser4.6 | 停止维护 |	 
+
+
+
 支持28种数据库
 -----------------------------------
 

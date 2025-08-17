@@ -1,5 +1,8 @@
 package org.jeecgframework.minidao.sqlparser.impl.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -10,7 +13,8 @@ import java.util.regex.Pattern;
  * @Date: 2025/8/15 09:49
  */
 public class SqlParserUtils {
-
+    private static final Log logger = LogFactory.getLog(SqlParserUtils.class);
+    
     /**
      * MyBatis占位符正则
      */
@@ -33,6 +37,8 @@ public class SqlParserUtils {
      * @date 2025/8/14 20:32
      */
     public static String maskMyBatisPlaceholders(String text, Map<String, String> tokenToRaw) {
+        logger.debug("[Mybatis替换占位符] maskMyBatisPlaceholders: " + text);
+        // 如果没有传入占位符映射，则直接返回原文本
         if (text == null || text.isEmpty()) {
             return text;
         }
@@ -47,6 +53,7 @@ public class SqlParserUtils {
             idx++;
         }
         m.appendTail(sb);
+        logger.debug("[Mybatis替换占位符] maskMyBatisPlaceholders result: " + sb.toString());
         return sb.toString();
     }
 
@@ -59,6 +66,7 @@ public class SqlParserUtils {
      * @date 2025/8/14 20:31
      */
     public static String restoreMyBatisPlaceholders(String sql, Map<String, String> tokenToRaw) {
+        logger.debug("[Mybatis占位符还原] restoreMyBatisPlaceholders: " + sql);
         if (sql == null || tokenToRaw == null || tokenToRaw.isEmpty()) {
             return sql;
         }
@@ -66,6 +74,7 @@ public class SqlParserUtils {
         for (Map.Entry<String, String> e : tokenToRaw.entrySet()) {
             out = out.replace("'" + e.getKey() + "'", e.getValue());
         }
+        logger.debug("[Mybatis占位符还原] restoreMyBatisPlaceholders result: " + out);
         return out;
     }
 }

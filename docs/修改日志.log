@@ -153,3 +153,13 @@ minidao-pe/src/main/java/org/jeecgframework/minidao/sqlparser/impl/SimpleSqlProc
 minidao-pe/src/main/java/org/jeecgframework/minidao/util/MiniDaoUtil.java
 minidao-pe-example/src/test/java/test/SqlParserTest.java
 ---author:chenrui---date:2025/8/15-----for:支持mybatis占位符---
+
+
+---author:chenrui---date:2025/8/15-----for:添加addWhereCondition方法---
+docs/修改日志.log
+minidao-pe/src/main/java/org/jeecgframework/minidao/sqlparser/impl/util/v49/JSqlParserAddWhereHelper49.java (+)
+minidao-pe/src/main/java/org/jeecgframework/minidao/sqlparser/impl/util/JSqlParserAddWhereHelper.java (+)
+minidao-pe/src/main/java/org/jeecgframework/minidao/sqlparser/impl/util/SimpleAddWhereHelper.java (+)
+minidao-pe/src/main/java/org/jeecgframework/minidao/util/MiniDaoUtil.java
+minidao-pe-example/src/test/java/test/SqlParserTest.java
+---author:chenrui---date:2025/8/15-----for:添加addWhereCondition方法---

@@ -5,7 +5,6 @@
 //import net.sf.jsqlparser.parser.CCJSqlParserUtil;
 //import net.sf.jsqlparser.parser.SimpleNode;
 //import net.sf.jsqlparser.schema.Column;
-//import net.sf.jsqlparser.schema.Table;
 //import net.sf.jsqlparser.statement.Statement;
 //import net.sf.jsqlparser.statement.select.*;
 //import org.jeecgframework.minidao.pojo.MiniDaoPage;
@@ -246,4 +245,29 @@
 //        return JSqlTableInfoHelper.getQueryTableInfo(sql);
 //    }
 //
+//    /**
+//     * 为SQL语句增加查询条件（直接使用条件语句）
+//     * for [issues/8336]支持SqlServer数据使用sql排序，新方案。
+//     * @param sql 原始SQL
+//     * @param condition 查询条件（不含where关键字）
+//     * @return 添加查询条件后的SQL
+//     */
+//    @Override
+//    public String addWhereCondition(String sql, String condition) {
+//        return JSqlParserAddWhereHelper.addWhereCondition(sql, condition);
+//    }
+//
+//    /**
+//     * 为SQL语句增加查询条件（使用字段、值和操作符）
+//     * for [issues/8336]支持SqlServer数据使用sql排序，新方案。
+//     * @param sql 原始SQL
+//     * @param field 字段名
+//     * @param value 字段值
+//     * @param operator 比较操作符（如：=, >, <, !=, like等）
+//     * @return 添加查询条件后的SQL
+//     */
+//    @Override
+//    public String addWhereCondition(String sql, String field, Object value, String operator) {
+//        return JSqlParserAddWhereHelper.addWhereCondition(sql, field, value, operator);
+//    }
 //}

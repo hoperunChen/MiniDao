@@ -113,6 +113,11 @@
 //    @Override
 //    public String addOrderBy(String sql, String field, boolean isAsc) {
 //        Statement statement = null;
+//        //---------------------------------------------------------------------------------------------
+//        // 如果包含mybatis变量，先将其替换为占位符，避免解析时出错
+//        Map<String, String> mbMap = new LinkedHashMap<>();
+//        sql = SqlParserUtils.maskMyBatisPlaceholders(sql, mbMap);
+//        //---------------------------------------------------------------------------------------------
 //        try {
 //            statement = CCJSqlParserUtil.parse(sql);
 //        } catch (JSQLParserException e) {
@@ -149,6 +154,10 @@
 //                sql = plainSelect.toString();
 //            }
 //        }
+//        //---------------------------------------------------------------------------------------------
+//        // 如果包含mybatis变量，恢复占位符
+//        sql = SqlParserUtils.restoreMyBatisPlaceholders(sql, mbMap);
+//        //---------------------------------------------------------------------------------------------
 //        return sql;
 //    }
 //

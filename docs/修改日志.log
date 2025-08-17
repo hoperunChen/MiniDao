@@ -162,4 +162,8 @@ minidao-pe/src/main/java/org/jeecgframework/minidao/sqlparser/impl/util/JSqlPars
 minidao-pe/src/main/java/org/jeecgframework/minidao/sqlparser/impl/util/SimpleAddWhereHelper.java (+)
 minidao-pe/src/main/java/org/jeecgframework/minidao/util/MiniDaoUtil.java
 minidao-pe-example/src/test/java/test/SqlParserTest.java
+org/jeecgframework/minidao/sqlparser/impl/JsqlparserSqlProcessor.java
+org/jeecgframework/minidao/sqlparser/impl/JsqlparserSqlProcessor49.java
+org/jeecgframework/minidao/sqlparser/impl/SimpleSqlProcessor.java
+org/jeecgframework/minidao/sqlparser/AbstractSqlProcessor.java
 ---author:chenrui---date:2025/8/15-----for:添加addWhereCondition方法---
